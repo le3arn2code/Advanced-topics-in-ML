@@ -1,0 +1,14 @@
+jupyter
+notebook
+ipykernel
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+tensorflow
+opencv-python-headless
+pillow
+keras
+# torch via:
+# python -m pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
