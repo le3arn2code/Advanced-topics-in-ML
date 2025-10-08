@@ -1,0 +1,22 @@
+stages:
+  - build
+  - test
+  - deploy
+
+build:
+  stage: build
+  script:
+    - python3 model.py
+  artifacts:
+    paths:
+      - iris_model.pkl
+
+test:
+  stage: test
+  script:
+    - python3 test_model.py
+
+deploy:
+  stage: deploy
+  script:
+    - nohup python3 app.py > api.log 2>&1 &
