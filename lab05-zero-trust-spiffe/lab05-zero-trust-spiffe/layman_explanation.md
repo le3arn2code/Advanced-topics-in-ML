@@ -1,0 +1,1 @@
+Imagine two apps on the same network. Instead of trusting each other because they’re 'close', they both show digital passports (SVIDs). SPIFFE issues those passports via SPIRE. Every connection is checked — no default trust, no shared passwords, no blind access. This is Zero Trust security in practice.  
