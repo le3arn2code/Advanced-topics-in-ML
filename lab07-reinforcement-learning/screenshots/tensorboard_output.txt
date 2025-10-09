@@ -1,0 +1,99 @@
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+Logging to ./logs/PPO_1
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 24.8     |
+|    ep_rew_mean     | 24.8     |
+| time/              |          |
+|    fps             | 1087     |
+|    iterations      | 1        |
+|    time_elapsed    | 1        |
+|    total_timesteps | 2048     |
+---------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 28.6        |
+|    ep_rew_mean          | 28.6        |
+| time/                   |             |
+|    fps                  | 761         |
+|    iterations           | 2           |
+|    time_elapsed         | 5           |
+|    total_timesteps      | 4096        |
+| train/                  |             |
+|    approx_kl            | 0.008296991 |
+|    clip_fraction        | 0.0973      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.686      |
+|    explained_variance   | -0.00134    |
+|    learning_rate        | 0.0003      |
+|    loss                 | 7.97        |
+|    n_updates            | 10          |
+|    policy_gradient_loss | -0.0149     |
+|    value_loss           | 62          |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 38.9        |
+|    ep_rew_mean          | 38.9        |
+| time/                   |             |
+|    fps                  | 693         |
+|    iterations           | 3           |
+|    time_elapsed         | 8           |
+|    total_timesteps      | 6144        |
+| train/                  |             |
+|    approx_kl            | 0.009952692 |
+|    clip_fraction        | 0.0712      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.664      |
+|    explained_variance   | 0.0717      |
+|    learning_rate        | 0.0003      |
+|    loss                 | 14          |
+|    n_updates            | 20          |
+|    policy_gradient_loss | -0.0194     |
+|    value_loss           | 38.9        |
+-----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 50.5        |
+|    ep_rew_mean          | 50.5        |
+| time/                   |             |
+|    fps                  | 664         |
+|    iterations           | 4           |
+|    time_elapsed         | 12          |
+|    total_timesteps      | 8192        |
+| train/                  |             |
+|    approx_kl            | 0.008491049 |
+|    clip_fraction        | 0.0738      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.628      |
+|    explained_variance   | 0.185       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 24.6        |
+|    n_updates            | 30          |
+|    policy_gradient_loss | -0.0165     |
+|    value_loss           | 60.7        |
+-----------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 65.6         |
+|    ep_rew_mean          | 65.6         |
+| time/                   |              |
+|    fps                  | 646          |
+|    iterations           | 5            |
+|    time_elapsed         | 15           |
+|    total_timesteps      | 10240        |
+| train/                  |              |
+|    approx_kl            | 0.0072495663 |
+|    clip_fraction        | 0.0572       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -0.607       |
+|    explained_variance   | 0.251        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 21.9         |
+|    n_updates            | 40           |
+|    policy_gradient_loss | -0.0149      |
+|    value_loss           | 65.1         |
+------------------------------------------
+✅ PPO training with TensorBoard complete.

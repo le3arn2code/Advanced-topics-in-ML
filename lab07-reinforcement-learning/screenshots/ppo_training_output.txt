@@ -1,0 +1,98 @@
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 22.2     |
+|    ep_rew_mean     | 22.2     |
+| time/              |          |
+|    fps             | 1101     |
+|    iterations      | 1        |
+|    time_elapsed    | 1        |
+|    total_timesteps | 2048     |
+---------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 24.4        |
+|    ep_rew_mean          | 24.4        |
+| time/                   |             |
+|    fps                  | 758         |
+|    iterations           | 2           |
+|    time_elapsed         | 5           |
+|    total_timesteps      | 4096        |
+| train/                  |             |
+|    approx_kl            | 0.009206904 |
+|    clip_fraction        | 0.107       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.686      |
+|    explained_variance   | -0.00482    |
+|    learning_rate        | 0.0003      |
+|    loss                 | 7.33        |
+|    n_updates            | 10          |
+|    policy_gradient_loss | -0.0172     |
+|    value_loss           | 55.4        |
+-----------------------------------------
+----------------------------------------
+| rollout/                |            |
+|    ep_len_mean          | 33.7       |
+|    ep_rew_mean          | 33.7       |
+| time/                   |            |
+|    fps                  | 691        |
+|    iterations           | 3          |
+|    time_elapsed         | 8          |
+|    total_timesteps      | 6144       |
+| train/                  |            |
+|    approx_kl            | 0.01314234 |
+|    clip_fraction        | 0.111      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -0.664     |
+|    explained_variance   | 0.0939     |
+|    learning_rate        | 0.0003     |
+|    loss                 | 8.03       |
+|    n_updates            | 20         |
+|    policy_gradient_loss | -0.0246    |
+|    value_loss           | 32.7       |
+----------------------------------------
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 48.6        |
+|    ep_rew_mean          | 48.6        |
+| time/                   |             |
+|    fps                  | 661         |
+|    iterations           | 4           |
+|    time_elapsed         | 12          |
+|    total_timesteps      | 8192        |
+| train/                  |             |
+|    approx_kl            | 0.008933475 |
+|    clip_fraction        | 0.107       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.634      |
+|    explained_variance   | 0.245       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 26          |
+|    n_updates            | 30          |
+|    policy_gradient_loss | -0.0213     |
+|    value_loss           | 55.6        |
+-----------------------------------------
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 64.6         |
+|    ep_rew_mean          | 64.6         |
+| time/                   |              |
+|    fps                  | 645          |
+|    iterations           | 5            |
+|    time_elapsed         | 15           |
+|    total_timesteps      | 10240        |
+| train/                  |              |
+|    approx_kl            | 0.0074269264 |
+|    clip_fraction        | 0.0499       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -0.621       |
+|    explained_variance   | 0.239        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 21.4         |
+|    n_updates            | 40           |
+|    policy_gradient_loss | -0.0138      |
+|    value_loss           | 61           |
+------------------------------------------
+✅ PPO training complete and model saved.
