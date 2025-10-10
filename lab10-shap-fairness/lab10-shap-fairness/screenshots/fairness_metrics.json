@@ -1,0 +1,19 @@
+{
+  "groups": {
+    "0": {
+      "TPR": 0.13368983957219252,
+      "FPR": 0.0071174377224199285,
+      "PositiveRate": 0.02198492462311558,
+      "Count": 1592
+    },
+    "1": {
+      "TPR": 0.5275142314990512,
+      "FPR": 0.08836023789294817,
+      "PositiveRate": 0.22417840375586853,
+      "Count": 3408
+    }
+  },
+  "notes": "sex codes originate from LabelEncoder on 'sex' column",
+  "disparate_impact_ratio": 10.196914822266933,
+  "equal_opportunity_diff": 0.3938243919268587
+}
